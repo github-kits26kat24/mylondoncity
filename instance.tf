@@ -10,7 +10,7 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 EOF
   tags = {
-    Name        = "lagostown"
+    Name        = "Tool Web Server"
     environment = "Tech"
     Department  = "IT"
   }
@@ -22,7 +22,7 @@ resource "aws_instance" "python3" {
  vpc_security_group_ids = [aws_security_group.london.id]
 key_name               = "kits26kat24"
   tags = {
-    Name        = "lagostown"
+    Name        = "Tool App Server"
     environment = "Tech"
     Department  = "IT"
   }
