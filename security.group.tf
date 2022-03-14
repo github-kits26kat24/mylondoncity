@@ -1,5 +1,5 @@
-resource "aws_security_group" "london" {
-  name        = "london"
+resource "aws_security_group" "sg" {
+  name        = "sg"
   description = "Allow TLS inbound traffic"
   vpc_id      = "vpc-09da7049777261adb"
 
