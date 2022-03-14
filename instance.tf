@@ -1,7 +1,7 @@
 resource "aws_instance" "web1" {
   ami                    = "ami-0730362f1c4289cf4"
   instance_type          = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.london.id]
+  vpc_security_group_ids = [aws_security_group.sg.id]
 key_name               = "kits26kat24"
  user_data              = <<EOF
 #!/bin/bash
@@ -19,7 +19,7 @@ EOF
 resource "aws_instance" "python3" {
   ami           = "ami-0730362f1c4289cf4"
   instance_type = "t3.micro"
- vpc_security_group_ids = [aws_security_group.london.id]
+ vpc_security_group_ids = [aws_security_group.sg.id]
 key_name               = "kits26kat24"
   tags = {
     Name        = "Tool App Server"
