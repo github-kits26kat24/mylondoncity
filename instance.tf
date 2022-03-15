@@ -19,7 +19,7 @@ EOF
 resource "aws_instance" "python3" {
   ami           = "ami-0730362f1c4289cf4"
   instance_type = "t3.micro"
- vpc_security_group_ids = [aws_security_group.sg.id]
+ vpc_security_group_ids = "vpc-09da7049777261adb"
 key_name               = "kits26kat24"
   tags = {
     Name        = "Tool App Server"
