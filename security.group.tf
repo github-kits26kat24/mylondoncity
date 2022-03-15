@@ -1,9 +1,7 @@
 resource "aws_security_group" "sg" {
   name        = "sg"
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_security_group.sg.id
-
-
+  vpc_id      = aws_vpc.main.id
   ingress {
     description      = "SSH from VPC"
     from_port        = 22
