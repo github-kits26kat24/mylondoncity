@@ -1,4 +1,4 @@
-resource "aws_db_instance" "london" {
+resource "aws_db_instance" "sg" {
   allocated_storage    = 10
   engine               = "mysql"
   engine_version       = "5.7"
