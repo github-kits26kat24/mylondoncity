@@ -3,6 +3,9 @@ resource "aws_vpc" "main" {
   instance_tenancy = "default"
 
   tags = {
-    Name = "main"
+    Name = "Joseph class"
   }
+}
+output "Joseph_Vpc_id" {
+  value = aws_vpc.main.id
 }
