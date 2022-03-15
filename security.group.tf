@@ -76,6 +76,6 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "london"
+    Name = "sg"
   }
 }
