@@ -6,6 +6,6 @@ resource "aws_vpc" "main" {
     Name = "Joseph class"
   }
 }
-output "Joseph_Vpc_id" {
+output "Kits_Vpc_id" {
   value = aws_vpc.main.id
 }
